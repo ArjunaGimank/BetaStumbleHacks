@@ -31,8 +31,9 @@ By : ${chalk.blue('@ArjunaGimank')}  ${chalk.blue('')}
 
 Feature :
 
-1. ${chalk.blue('Push Crown + Tropi')}
-2. ${chalk.blue('Push Tropi')}
+1. ${chalk.blue('Push Crown + Trophy')}
+2. ${chalk.blue('Push Trophy Only')}
+`);
 
     const feature = rs.question('[+] Pilih Fitur, 1 or 2 : ');
     const auth = rs.question('[+] Auth Token : ');
