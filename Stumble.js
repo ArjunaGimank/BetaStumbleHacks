@@ -2,6 +2,7 @@ const fetch = require('node-fetch');
 const moment = require('moment');
 const chalk = require('chalk');
 const rs = require('readline-sync');
+const delay = require('delay');
 
 const GoStumble = (code, auth) => new Promise((resolve, reject) => {
 
@@ -36,10 +37,14 @@ Features :
 `);
 
     const feature = rs.question('[+] Pilih Fitur 1 atau 2 : ');
-    const auth = rs.question('[+] Auth Token : ');
+    
     console.log('');
 
     if (feature == '1') {
+        
+        const auth = rs.question('[+] Auth Token : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // 
+        console.log('');
 
         while (true) {
 
@@ -74,6 +79,10 @@ Features :
         }
         
     } else if (feature == '2') {
+        
+        const auth = rs.question('[+] Auth Token : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // 
+        console.log('');
 
         while (true) {
 
